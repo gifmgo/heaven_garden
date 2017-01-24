@@ -8,4 +8,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="checkId" resultType="String">
 		 select id from member where id=#{id}
 	</select>
+	
+	<insert id="addMember" parameterType="kr.or.com.member.memberDTO">
+	  insert into member(id, pwd, name, phone) values(#{id}, #{pwd}, #{name}, #{phone})
+	</insert>
 </mapper>

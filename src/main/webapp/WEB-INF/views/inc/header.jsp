@@ -39,7 +39,7 @@
 
 
  <div class="modal fade" id="myModal" role="dialog">
-     <form action="" class="form-horizontal" method="post">
+     <form action="" id="memberSubmit" class="form-horizontal" method="post">
      
     <div class="modal-dialog modal-mg">
       <div class="modal-content">
@@ -80,7 +80,7 @@
          <br/>     
         </div>
         <div class="modal-footer">
-          <input type="submit" id="addMemberBtn" value="회원가입" class="col-sm-offset-5 btn btn-default">  
+          <input type="submit" value="회원가입" class="col-sm-offset-5 btn btn-default">  
           <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
         </div>
       </div>

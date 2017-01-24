@@ -10,6 +10,7 @@ public class memberService {
 	@Autowired
 	private SqlSession session;
 	
+	//아이디 중복확인
 	public String checkId(String id){
 		String result = "";
 		try{
@@ -20,6 +21,19 @@ public class memberService {
 		}catch (Exception e) {
 			e.toString();
 		}
+		return result;
+	}
+	
+	//회원가입
+	public int addmember(memberDTO dto){
+		int result=0;
+		try{
+			memberDAO dao = session.getMapper(memberDAO.class);
+			result =dao.addMember(dto);
+		}catch (Exception e) {
+			e.getMessage();
+		}
+		
 		return result;
 	}
 }

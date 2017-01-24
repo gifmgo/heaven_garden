@@ -29,5 +29,14 @@ public class memberController {
 	 model.addAttribute("msg", msg);
 	 return jsonview;
  }
+ 
+  @RequestMapping("/addMember.do")
+  public View addMember(memberDTO dto, Model model){
+	 
+	  int result = memberservice.addmember(dto);
+	  System.out.println("회원가입 결과 : "+result);
+	  
+	  return jsonview;
+  }
 	
 }
