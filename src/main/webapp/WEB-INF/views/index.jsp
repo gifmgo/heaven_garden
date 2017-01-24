@@ -4,7 +4,6 @@
 <br/><br/>
 <div class="container-fluid">
 		<img src="images/Test.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="500">
-		
 </div>
 <div class="container" id="flowerDiv">
 	<div class="row">
