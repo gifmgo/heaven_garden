@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<a href="test.do">테스트</a>
-
-
 <br/><br/>
+<div class="container-fluid">
+		<img src="images/Test.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="500">
+		
+</div>
 <div class="container" id="flowerDiv">
 	<div class="row">
 		<div class="col-sm-offset-4 col-sm-4 text-center">
@@ -123,7 +124,7 @@
 	  <br/>
 	  <div class="row">
 	  	<div class="col-sm-offset-4 col-sm-4 text-center">
-	    	  <button type="button" class="btn btn-default btn-lg btn-block">더보기</button>
+	    	 <button type="button" class="btn btn-default btn-lg btn-block" onclick="product($(this));" value='flower'>더보기</button>
 	  	</div>
 	  </div>
 </div>

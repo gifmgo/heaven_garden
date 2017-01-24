@@ -6,10 +6,6 @@
       <a class="navbar-brand" href="#">하늘정원</a>
       <a class="navbar-brand" href="#">꽃집 소개</a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">로그인</a></li>
-      <li><a href="#">회원가입</a></li>
-    </ul>
      <ul class="nav navbar-nav navbar-right">  
       <li><a href="#" id="addMember">회원가입</a></li>
       <li><a href="#">로그인</a></li>
@@ -37,9 +33,6 @@
 	     			</div>
 			    </div>
 			</div>		    
-		</div>
-		<div class="col-sm-12">
-			<img src="images/Test.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="500">
 		</div>
 	</div>
 </div>
