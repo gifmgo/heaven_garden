@@ -10,7 +10,7 @@
 		$('#checkIdBtn').click(function(){
 			alert('중복검사');
 			var id=$('#id').val();
-		/*	$.ajax({
+			$.ajax({
 				url:"checkId.do",
 				data:{
 					id:id
@@ -18,7 +18,7 @@
 				success:function(data){
 				
 				}
-			});*/
+			});
 		});
 		
 		//회원가입 버튼 클릭시
