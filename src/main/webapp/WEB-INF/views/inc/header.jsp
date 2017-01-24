@@ -10,6 +10,10 @@
       <li><a href="#">Page 2</a></li>
       <li><a href="#">Page 3</a></li>
     </ul>
+     <ul class="nav navbar-nav navbar-right">  
+      <li><a href="#" id="addMember">회원가입</a></li>
+      <li><a href="#">로그인</a></li>
+    </ul>
   </div>
 </nav>    
 <div class="container-fluid">
@@ -39,3 +43,54 @@
 		</div>
 	</div>
 </div>
+
+
+ <div class="modal fade" id="myModal" role="dialog">
+     <form action="" class="form-horizontal" method="post">
+     
+    <div class="modal-dialog modal-mg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center">회원가입</h4>
+        </div>
+        <div class="modal-body">
+         <div class="form-group">
+            <label class="col-sm-offset-1 col-sm-2 control-label">아이디 </label>
+            <div class=" input-group col-sm-7">
+              <input type="text" id="id" name="id" class="form-control">
+              <div class="input-group-btn">
+                <input type="button" id="checkIdBtn" value="중복확인" class="btn btn-default">
+              </div>
+          </div> 
+         </div>
+         <div class="form-group">
+            <label class="col-sm-offset-1 col-sm-2 control-label">비밀번호  </label>
+            <div class="input-group col-sm-7">
+              <input type="password" id="pwd" name="pwd" class="form-control">
+            </div>
+          </div>
+          
+         <div class="form-group">
+            <label class="col-sm-offset-1 col-sm-2 control-label">이름  </label>
+            <div class="input-group col-sm-7">
+              <input type="text" id="name" name="name" class="form-control">
+            </div>
+         </div>
+         
+          <div class="form-group">
+            <label class="col-sm-offset-1 col-sm-2 control-label">연락처  </label>
+            <div class="input-group col-sm-7">
+              <input type="text" id="phone" name="phone" class="form-control">
+            </div>
+         </div>
+         <br/>     
+        </div>
+        <div class="modal-footer">
+          <input type="submit" id="addMemberBtn" value="회원가입" class="col-sm-offset-5 btn btn-default">  
+          <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
