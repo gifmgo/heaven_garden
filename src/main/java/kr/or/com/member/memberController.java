@@ -35,7 +35,7 @@ public class memberController {
 	 
 	  int result = memberservice.addmember(dto);
 	  System.out.println("회원가입 결과 : "+result);
-	  
+	  model.addAttribute("result", result);
 	  return jsonview;
   }
 	

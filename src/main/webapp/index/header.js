@@ -70,6 +70,12 @@
 						},
 						success:function(data){
 							console.log(data.result);
+							if(data.result==0){
+								alert('회원가입에 실패했습니다');
+								return false;
+							}else{
+								alert('회원가입 성공');
+							}
 						}
 					});
 					
