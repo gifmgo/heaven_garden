@@ -8,8 +8,8 @@
 </div>
 <div class="container text-center">
 	<h4>이쁜 꽃 한번 보셔요</h4>
+	<input type="button" class="btn btn-primary" value="글쓰기" onclick="writeProduct($(this));" id="flower">
 	<br/><br/>
-	
 	<div class="row">
 			
 		<div class="col-sm-4">

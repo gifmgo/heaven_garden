@@ -3,9 +3,33 @@
  */
 
     var checkId=0;
-	$(function(){
+
+    $(function(){
 		
-			
+    	//로그인 버튼 클릭시
+    	$('#login').click(function(){
+    		$('#loginModal').modal();
+    	});
+    	
+    	$('#loginForm').submit(function(){
+    		
+    		alert("로그인 버튼 클릭");
+    		if($('#loginId').val() == ''){
+    			alert("아이디를 입력해주세요 !");
+    			$('#loginId').focus();
+    			return false;
+    		}
+    		
+    		if($('#loginPw').val() == ''){
+    			alert("비밀번호를 입력해주세요 !");
+    			$('#loginPw').focus();
+    			return false;
+    		}
+    		alert("입력한 아이디  : "+$('#loginId').val()+ " // 비번 : "+$('#loginPw').val());
+    	});
+    	
+    	
+    	//회원가입 버튼 클릭시     	
 		$('#addMember').click(function(){
 			$('#myModal').modal();
 		});
