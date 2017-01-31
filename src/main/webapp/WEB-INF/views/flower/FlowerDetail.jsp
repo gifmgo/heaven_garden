@@ -24,7 +24,7 @@
 					<h3>연락처  </h3><span class="form-control">031-111-2222</span>
 				</div>
 			 	<div class="form-group text-center">
-					<input type="button" class="btn btn-primary" value="돌아가기">
+					<input type="button" class="btn btn-primary" value="돌아가기" onclick="backFunc();">
 				</div>
 			</div>
 		</div>
